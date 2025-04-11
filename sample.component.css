@@ -1,125 +1,42 @@
-.card-header svg {
-    width: 60%;
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
 }
 
-.l0{left: 0px !important;}        
-.l275{left: 240px !important;}
-
-#svg text {
-    font-size: 16px;
-}
-
-.ref-det span{
-        color: #000;
-    font-size: 14px;
-    }
-
-.customername{width: 90%; margin: 0 auto 1rem auto;}
-
-.progressbg{height: calc(100vh - 72px); width: 100%; border-radius: 0px; z-index: 10; position: relative;
-        /* background: #2385c6;  */
-        background: linear-gradient(to right, #222655 32%,#f0b3fc 51%,#e87dc8 65%,#f8e2ea 89%);
-        /* background: -moz-linear-gradient(top,  #4ca0d7 0%, #085485 40%); FF3.6-15 */
-        background: -webkit-linear-gradient(top,  #fbfafc 0%,#141438 40%); /* Chrome10-25,Safari5.1-6 */
-        background: linear-gradient(to top, #fbfafc,#141438 40%);
-
-       /* background: -webkit-linear-gradient(top,  #f0b3fc 0%,#222655 40%); */   /* Chrome10-25,Safari5.1-6 */
-       /* background: linear-gradient(to top, #f0b3fc,#222655 40%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4ca0d7', endColorstr='#085485',GradientType=0 ); /* IE6-9 */
-        box-shadow: 0px 4px 5px #b1b1b1;
-        transition:0.4s ease-out;
-        position: relative;
-}
-    
-  .progressouter{width: 100%; background: #fff; height: 4px; border-radius: 10px; position: relative;background: #006097;}
-  .progressinner{position: absolute; left: 0px; top:0px; border-radius:10px; background:#3cf94b; width: 15%; z-index: 5; height: 100%; }
-  .progresstxt{right: 7%;/* color: #015f9d;*/ color:#fff; font-size: 11px; font-weight: 300; bottom: -7px; position: absolute;}
-  .progressbg .card-header{flex-direction: column; position: relative; margin-top:10px; margin-bottom: 0px; background-color:transparent;
-    border-bottom:none;}
-.progressbg #progressbar li span:hover{
-    /* color: #000; */
-    color: #fff;
-}
-.progressbg #progressbar li span:hover #progressbar li:before{
-    color: #fef200;
-    background: #fef200;
-}
-.toggle_icon {
-    position: fixed; 
-    left: -35px; 
-    top:71px;    
-    width: 35px;    
-    background: #fdf200;
-    padding: 8px 12px;
-    display: flex;   
-    color: #000;
-    cursor: pointer;    
-    transition:0.52s ease-out;
-    z-index: 999;
-}
-
-.s-active{
-    left: 0 !important;
-}
-
-.progressbg{
-    width: 240px !important;
-    z-index: 99 !important;
-    position: fixed !important;
-    box-shadow: 0px 0 6px 0px #b1afaf !important;
-}
-
-@media(max-width: 991px){
-    
-   
-    .toggle_icon{
-        left: 0px;
-        display: block;
-    }
-
-    .menu-slide{       
-        transition: all 0.4s linear;
-    }
-    .mob-grid{
-        position: fixed;
-        top: 71px;
-        left: -240px;
-        height: 100%;
-        display: grid;
-        grid-template-columns: 200px 40px;
-        z-index: 99;
-    }
-
-    .mblSidebar{
-      transition:0.4s ease-out;       
-      float: left;
-      z-index: 99;
-    } 
-      
-    .progress-mobhide .card-body{
-           padding-bottom: 50px !important;
-       }
-}
-
-@media(max-width: 767px){   
-  
-   nav.navbar#grid{
-   position: fixed;
-    z-index: 99;
+table {
     width: 100%;
-   }  
-   .refno {
-       padding: 0px;
-       text-align: center;
-   }
-   .applica-apptext {
-       font-size: 13px;
-   }   
+    border-collapse: collapse;
+    background-color: #f2f2f2;
 }
 
+th,
+td {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+    border: 0 !important;
+}
 
-.card-body {
-    height: 100vh;
-    overflow-y: auto;
-    padding: 0px;
+th {
+    background-color: #d7e2f7;
+    color: #000;
+    font-weight: bold !important;
+    border-bottom: 1px solid #afb5bb !important;
+}
+
+tr td:first-child {
+    font-weight: bold;
+    border-right: 1px solid #afb5bb !important;
+}
+
+tr:nth-child(odd) {
+    background: #d7e2f7 !important;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+th[rowspan="13"] {
+    border: none !important;
 }
